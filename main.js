@@ -34,7 +34,7 @@ module.exports.loop = function () {
     var homeRoom = Game.rooms['W2N6'];
     var leftRoom = Game.rooms['W3N6'];
 
-
+ 
     // how many creeps exist
 	var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
 	var upgraders = _.filter(Game.creeps, (creep) => creep.memory.role == 'upgrader');
