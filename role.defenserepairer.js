@@ -2,9 +2,8 @@ var roleDefenseRepairer = {
 
     run: function(creep) {
 
-	    if(creep.memory.working && creep.carry.energy == 0) creep.memory.working = false;
-	    if(!creep.memory.working && creep.carry.energy == creep.carryCapacity) creep.memory.working = true;
-
+    	if(creep.memory.working && creep.carry.energy == 0) creep.memory.working = false;
+    	if(!creep.memory.working && creep.carry.energy == creep.carryCapacity) creep.memory.working = true;
 
         if(creep.ticksToLive > 20) {
 
@@ -21,7 +20,7 @@ var roleDefenseRepairer = {
                     }
                 }
                 else {
-                	creep.moveTo(Game.flags['flagR']);
+                    creep.moveTo(Game.flags['flagR']);
                 }
     	    }
     	    else {
@@ -37,12 +36,10 @@ var roleDefenseRepairer = {
                         }
                     }
                     EnergyCarried = 50*carryParts;
-                    //console.log(creep.name + ' - EC: ' + EnergyCarried);
                     Memory.energyConsumed = Memory.energyConsumed + EnergyCarried;
                     Memory.energyConsumedByRepairers = Memory.energyConsumedByRepairers + EnergyCarried;
                 }
     	    }
-
         }
         else {
             var energyLeft = creep.carry.energy;
@@ -54,10 +51,7 @@ var roleDefenseRepairer = {
                 Memory.energyConsumedByRepairers = Memory.energyConsumedByRepairers - energyLeft;
             }
         }
-
-
-
-	}
+    }
 };
 
 module.exports = roleDefenseRepairer;
