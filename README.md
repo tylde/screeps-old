@@ -2,8 +2,8 @@
 ## Overview
 My code used in game called [Screeps](http://screeps.com/)
 
-### Main
+## Main
 
-### Types of creeps
+## Types of creeps
 
-### Summary
+## Summary
